@@ -1,0 +1,68 @@
+{
+  "demo": true,
+  "source": "deterministic simulated prices, seed 2026",
+  "market": "synthetic",
+  "market_code": "synthetic",
+  "package_version": "1.1.0",
+  "split_at_utc": "2025-03-23T06:00:00+00:00",
+  "train_bars": 1950,
+  "oos_bars": 1050,
+  "candidate_pairs": [
+    [
+      "DEMO_Y",
+      "DEMO_X"
+    ],
+    [
+      "DEMO_Y",
+      "DEMO_OTHER"
+    ]
+  ],
+  "require_i1": true,
+  "threshold": 0.05,
+  "funding_file_used": false,
+  "parameters": {
+    "lookback": 168,
+    "entry": 2.0,
+    "exit": 0.5,
+    "stop": 4.0,
+    "max_holding": 168,
+    "cooldown": 12,
+    "fee_bps": 6.0,
+    "slippage_bps": 8.0,
+    "borrow_apr": 0.0
+  },
+  "pair": {
+    "y": "DEMO_Y",
+    "x": "DEMO_X",
+    "alpha": 0.6700805005987432,
+    "beta": 0.974348885954691,
+    "pvalue": 3.1219834432929615e-15,
+    "qvalue": 6.243966886585923e-15
+  },
+  "metrics": {
+    "net_total_return": 0.29938118408955994,
+    "annualized_return": 7.908253143981101,
+    "hourly_sharpe_zero_rf": 10.832121292817261,
+    "sharpe_block_bootstrap": {
+      "level": 0.95,
+      "block_hours": 24,
+      "draws": 2000,
+      "sharpe_low": 7.351674349878364,
+      "sharpe_high": 14.46651478157638,
+      "fraction_of_draws_with_sharpe_at_or_below_zero": 0.0
+    },
+    "sortino_zero_target": 19.765681249568242,
+    "max_drawdown": -0.022923638968611604,
+    "entries": 20,
+    "winning_trade_fraction": 1.0,
+    "median_trade_return": 0.012281922139012913,
+    "hours_with_position": 266,
+    "exposure_fraction": 0.25333333333333335,
+    "total_execution_cost_as_fraction_of_initial_equity": 0.06604267044085665,
+    "total_borrow_cost_in_return_units": 0.0,
+    "total_funding_pnl_in_return_units": 0.0,
+    "sum_trade_notional_over_pretrade_equity": 41.790334937154626,
+    "positive_return_hours_fraction": 0.15142857142857144,
+    "oos_bars": 1050
+  }
+}

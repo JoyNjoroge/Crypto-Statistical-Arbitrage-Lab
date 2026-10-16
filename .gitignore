@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+*.pyc
+.ipynb_checkpoints/
+data/cache/
+results/
+.DS_Store
+.mypy_cache/
+.coverage
+coverage.xml

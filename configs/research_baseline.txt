@@ -1,0 +1,22 @@
+Research settings used by the default CLI:
+
+formation = 65% of sample
+candidate pairs = ETHUSDT:ETCUSDT, BTCUSDT:ETHUSDT, SOLUSDT:AVAXUSDT
+sampling = 1 hour UTC
+cointegration = Engle-Granger with BH-adjusted q <= .05
+I(1) = ADF level p > .05, first difference p < .05
+hedge ratio = formation-period log-price OLS slope
+signal = prior 168-bar residual z-score
+entry = +/-2
+exit = +/-0.5
+stop = +/-4
+max holding = 168 hourly signals
+cooldown after exit = 12 hourly signals
+fill = next hourly open
+allocation = gross notional 1.0 split as beta weights
+fee = 6 bps per traded dollar
+slippage = 8 bps per traded dollar
+borrow APR = 0 (excluded, must adjust for spot shorts)
+funding = excluded unless a CSV is explicitly given for futures
+
+Change settings for documented research questions, not to chase OOS Sharpe.
